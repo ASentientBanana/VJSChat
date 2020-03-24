@@ -1,0 +1,230 @@
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  FlatList,
+  Text,
+  StatusBar,
+} from 'react-native';
+import MessageListItem from './MessageListItem'
+
+const MessageList = ()=>{
+    const dummyData =[
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+        {
+            usr:'me',
+            txt:'dasdas',
+        },
+    ]
+
+    return(
+        <View style={listStyle.listStyle}>
+        <FlatList data={dummyData}
+        renderItem={({item,index})=><MessageListItem msgTxt={item.txt} key={index}/>}
+        onEndReachedThreshold={5}
+        />
+        </View>
+    )
+}
+
+const listStyle = StyleSheet.create({
+    listStyle:{
+        marginBottom: 40,
+        // backgroundColor: 'red',
+        paddingBottom: 40,
+    }
+})
+export default MessageList;
